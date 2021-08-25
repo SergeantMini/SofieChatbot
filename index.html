@@ -4,7 +4,7 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>Slider carousel</title>
+		<title>Sofie Chatbot</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,14 +24,19 @@
 	<body>
 		
 		<!-- responsive top menu -->
-		<div class="topnav" id="myTopnav" align="right">
-			<a href="#home"><img src="./imagenes/LogoMenu.png" style="max-width:100px;"></a>
+		<div class="topnav" id="myTopnav" align="right" >
+			<a href="#home"><img src="./imagenes/LogoMenu.png" style="max-width:90px;"></a>
 			<div class="topnav-right">
-				<a href="#Inicio">Inicio</a>
+				<a style="visibility: hidden;" href="#Inicio"></a>
+				<a href="#Inicio" onClick="location.href='index.html'">Inicio</a>
 				<a href="#Chat" onClick="location.href='chat.html'">Chat</a>
-				<a href="#Directorio">Directorio</a>
+				<a href="#Directorio" onClick="location.href='directorio.html'">Directorio</a>
 				<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg"></a>
-				<a href="#IG"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+				<a href="https://www.instagram.com/app_sofie/" target="_blank">
+					<div id="divrsfooter">
+						<img src="./imagenes/Inicio/IGmenu.svg">
+					</div>
+				</a>
 				<a href="#TW"><img src="./imagenes/Inicio/TWmenu.svg"></a>
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -85,13 +90,13 @@
 		
 		<br><br><br>
 		<!-- Encuéntrame y conversa conmigo -->
-		<div class="container" style="background-image: url('./imagenes/FondoDegradado2.png');background-repeat: no-repeat;width:100%;">
+		<div class="container" style="background-image: url('./imagenes/FondoDegradado2.png');background-repeat: no-repeat;width:100%;" >
 			<br><br>
 			<div id="headEYCC">
 				Encuéntrame y conversa conmigo en:
 			</div>
 			<br><br>
-			<div style="max-width:1200px; text-align:center;" align="center">
+			<div class="container" style="max-width:1200px; text-align:center;" align="center">
 				<div class="col-sm-4">
 					<table style="width:100%;"><!--TABLA 2 lotties -->
 						<tr>
@@ -106,7 +111,7 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+										<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_7wg8osae.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop	 autoplay></lottie-player>
 										<p>Messenger</p>
 									</div>
 								</div>
@@ -120,7 +125,7 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+										<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_eer16sgw.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop  autoplay></lottie-player>
 										<p>Telegram</p>
 									</div>
 								</div>
@@ -128,7 +133,7 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+										<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_5dtfo4ne.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
 										<p>SMS</p>
 									</div>
 								</div>
@@ -150,8 +155,8 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
-										<p>Android</p>
+										<img src="./imagenes/Inicio/Rectangle.png" style="max-width:100px;padding-top:40px;">
+										<p style="padding-top:20px;">Android</p>
 									</div>
 								</div>
 							</th>
@@ -172,7 +177,7 @@
 		<br><br>
 		<div class="">
 			<div class="container">
-				<div class="col-sm-6">
+				<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
 					<div class="divareas">
 						<br>
 						<div id="areasCentered">
@@ -183,16 +188,13 @@
 							<tr>
 								<th>
 									<div>
-										<div class="divareasiconos">
-											<p>imagen1</p>
-										</div>
+										<img src="./imagenes/Inicio/areas/LibroWeb.png" style="max-width:100px;">
 									</div>
 								</th>
 								<th>
-									<div class="divareasiconos">
-										<div align="center">
-											<p>imagen2</p>
-										</div>
+									<div>
+										<img src="./imagenes/Inicio/areas/Herramientas.png" style="max-width:100px;">
+									</div>
 									</div>
 								</th>
 							</tr>
@@ -203,7 +205,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
 					<div class="divareas">
 						<br>
 						<div id="areasCentered">
@@ -214,16 +216,12 @@
 							<tr>
 								<th>
 									<div>
-										<div class="divareasiconos">
-											<p>imagen1</p>
-										</div>
+										<img src="./imagenes/Inicio/areas/Lupa.png" style="max-width:100px;">
 									</div>
 								</th>
 								<th>
-									<div class="divareasiconos">
-										<div align="center">
-											<p>imagen2</p>
-										</div>
+									<div>
+										<img src="./imagenes/Inicio/areas/Ruta.png" style="max-width:100px;">
 									</div>
 								</th>
 							</tr>
@@ -238,7 +236,7 @@
 			<br>
 			<div class="container">
 				<div class="">
-					<div class="col-sm-6">
+					<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
 						<div class="divareas">
 							<br>
 							<div id="areasCentered">
@@ -249,16 +247,12 @@
 								<tr>
 									<th>
 										<div>
-											<div class="divareasiconos">
-												<p>imagen1</p>
-											</div>
+											<img src="./imagenes/Inicio/areas/Cuidado.png" style="max-width:100px;">
 										</div>
 									</th>
 									<th>
-										<div class="divareasiconos">
-											<div align="center">
-												<p>imagen2</p>
-											</div>
+										<div>
+											<img src="./imagenes/Inicio/areas/Telefono.png" style="max-width:100px;">
 										</div>
 									</th>
 								</tr>
@@ -269,7 +263,7 @@
 							</div>
 						</div>
 					</div>	
-					<div class="col-sm-6">
+					<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
 						<div class="divareas">
 							<br>
 							<div id="areasCentered">
@@ -280,16 +274,12 @@
 								<tr>
 									<th>
 										<div>
-											<div class="divareasiconos">
-												<p>imagen1</p>
-											</div>
+											<img src="./imagenes/Inicio/areas/Directorio.png" style="max-width:100px;">
 										</div>
 									</th>
 									<th>
-										<div class="divareasiconos">
-											<div align="center">
-												<p>imagen2</p>
-											</div>
+										<div>
+											<img src="./imagenes/Inicio/areas/Links.png" style="max-width:100px;">
 										</div>
 									</th>
 								</tr>
@@ -311,8 +301,7 @@
 				Testimonios
 			</div>
 			<br>
-			<!-- CARROUSEL -->
-					
+			<!-- CARROUSEL -->	
 			<div class="container">
 			  <div class="content">
 				<div class="slider-container">
@@ -425,6 +414,39 @@
 		
 		<br><br><br>
 		
+		<div id="headVideos">
+			Videos
+		</div>
+		<br>
+		<div class="container">
+			  <div class="content">
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div style="max-width:500px;">
+						<div>
+							<div class="container">
+								<img src="./imagenes/Inicio/CapVideo.png">
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div style="max-width:500px;">
+						<div>
+							<div class="container">
+								<img src="./imagenes/Inicio/CapVideo.png">
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		
+		<br><br><br>
+		
 	<footer class="container-fluid white py-5" style="background: #ECE5F6;">
 		<br>
 		<div class="container">
@@ -447,9 +469,9 @@
 									<div class="">
 										<div class="col-md">
 											 <ul style="list-style-type:none;padding-left:-20px;padding-inline-start: 0px;">
-												<li> <a id="textosfooter" href="#inicio">Inicio</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='index.html'">Inicio</a> </li>
 												<li> <a id="textosfooter" onClick="location.href='chat.html'">Chat</a> </li>
-												<li> <a id="textosfooter" href="#directorio">Directorio</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='directorio.html'">Directorio</a> </li>
 											 </ul>
 										</div>
 									</div>
@@ -463,7 +485,7 @@
 												<tr>
 													<th>
 														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/FBmenu.svg"></a>
+															<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg" onClick="location.href='https://www.instagram.com/app_sofie/'"></a>
 														</div>
 													</th>
 													<th>
@@ -479,7 +501,7 @@
 												<tr>
 													<th>
 														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+															<a href="https://www.instagram.com/app_sofie/" target="_blank"><img src="./imagenes/Inicio/IGmenu.svg"></a>
 														</div>
 													</th>
 													<th>
@@ -495,7 +517,7 @@
 												<tr>
 													<th>
 														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/TWmenu.svg"></a>
+															<a href="#IG"><img src="./imagenes/Footer/YTlogo.svg"></a>
 														</div>
 													</th>
 													<th>
@@ -540,9 +562,7 @@
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div id="avisosfooter">
-						Español (MX)
-					</div>
+					
 				</div>
 			</div>
 		</div>
