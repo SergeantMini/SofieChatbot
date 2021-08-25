@@ -25,13 +25,18 @@
 		
 		<!-- responsive top menu -->
 		<div class="topnav" id="myTopnav" align="right">
-			<a href="#home"><img src="./imagenes/LogoMenu.png" style="max-width:100px;"></a>
+			<a href="#home" onClick="location.href='index.html'"><img src="./imagenes/LogoMenu.png" style="max-width:100px;"></a>
 			<div class="topnav-right">
-				<a href="#Inicio">Inicio</a>
+				<a style="visibility: hidden;" href="#Inicio"></a>
+				<a href="#Inicio" onClick="location.href='index.html'">Inicio</a>
 				<a href="#Chat" onClick="location.href='chat.html'">Chat</a>
-				<a href="#Directorio">Directorio</a>
+				<a href="#Directorio" onClick="location.href='directorio.html'">Directorio</a>
 				<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg"></a>
-				<a href="#IG"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+				<a href="https://www.instagram.com/app_sofie/" target="_blank">
+					<div id="divrsfooter">
+						<img src="./imagenes/Inicio/IGmenu.svg">
+					</div>
+				</a>
 				<a href="#TW"><img src="./imagenes/Inicio/TWmenu.svg"></a>
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -104,9 +109,9 @@
 									<div class="">
 										<div class="col-md">
 											 <ul style="list-style-type:none;padding-left:-20px;padding-inline-start: 0px;">
-												<li> <a id="textosfooter" href="#inicio">Inicio</a> </li>
-												<li> <a id="textosfooter" href="#chat">Chat</a> </li>
-												<li> <a id="textosfooter" href="#directorio">Directorio</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='index.html'">Inicio</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='chat.html'">Chat</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='directorio.html'">Directorio</a> </li>
 											 </ul>
 										</div>
 									</div>
@@ -115,7 +120,7 @@
 									<h6 id="títulosfooter" style="font-size:12px;">Síguenos en</h6>
 									<br>
 									<div class="">
-										<div class="col-md-4">
+										<div class="col-md-6">
 											<table>
 												<tr>
 													<th>
@@ -131,28 +136,12 @@
 												</tr>
 											</table>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-6">
 											<table>
 												<tr>
 													<th>
 														<div id="divrsfooter">
 															<a href="#IG"><img src="./imagenes/Inicio/IGmenu.svg"></a>
-														</div>
-													</th>
-													<th>
-														<a id="textosfooter" href="#inicio">
-															Sofiechatbot
-														</a>
-													</th>
-												</tr>
-											</table>
-										</div>
-										<div class="col-md-4">
-											<table>
-												<tr>
-													<th>
-														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/TWmenu.svg"></a>
 														</div>
 													</th>
 													<th>
@@ -197,9 +186,7 @@
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div id="avisosfooter">
-						Español (MX)
-					</div>
+					
 				</div>
 			</div>
 		</div>
