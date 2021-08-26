@@ -8,12 +8,12 @@ body {
 }
 
 #headMain {
-	font-weight: bold;
+	font-weight: bolder;
 	font-size:3rem;
 	line-height: 32px;
 	letter-spacing: 2px;
 	text-align: left;
-	color: black;
+	color: white;
 }
 
 #headEYCC {
@@ -32,6 +32,15 @@ body {
 	letter-spacing: 2px;
 	text-align: center;
 	color: #DACFE8;
+}
+
+#headVideos {
+	font-weight: bold;
+	font-size:3rem;
+	line-height: 32px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #E195BD;
 }
 
 #textoMain {
@@ -59,8 +68,7 @@ body {
 }
 
 #areasCentered {
-	font-style: normal;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 24px;
 	letter-spacing: 1.2857142686843872px;
 	text-align: center;
@@ -95,10 +103,12 @@ body {
 }
 
 .divareas {
-	padding-top:5px;
-	padding-bottom:5px;
-	max-width:600px;
-    height:250px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	padding-right:10px;
+	width:610px;
+    min-height:260px;
 	text-align:center;
 	background-color: #ECE5F6;
 }
@@ -120,7 +130,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: bolder;
   border-radius: 20px;
   width:290px;
   height:40px;
@@ -352,12 +362,6 @@ hr {
     margin-top:10px;
 }
 
-.icon {
-    position: absolute;
-    right: -10px;
-    top: -20px;
-}
-
 .icon img {
     width: 60px;
     height: 60px;
@@ -432,12 +436,14 @@ hr {
 #títulosfooter{
 	color: #000;
 	font-size:14px;
-	font-weight: bold;
+	font-weight: bolder;
+	text-align: left;
 }
 #textosfooter{	
 	color: black;
 	font-size: 12px;
 	line-height: 17px;
+	padding-left:10px;
 }
 #redessocfooter{
 	height: 20px;
@@ -445,8 +451,8 @@ hr {
 	padding-top:9px;
 }
 #divrsfooter{
-	height:35px;
-	width:35px;
+	height:30px;
+	width:30px;
 	border-radius: 50%;
 	background-color: transparent;
 	text-align: center;
