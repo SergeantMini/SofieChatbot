@@ -8,8 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,8 +23,8 @@
 	<body>
 		
 		<!-- responsive top menu -->
-		<div class="topnav" id="myTopnav" align="right">
-			<a href="#home" onClick="location.href='index.html'"><img src="./imagenes/LogoMenu.png" style="max-width:100px;"></a>
+		<div class="topnav" id="myTopnav" align="right" >
+			<a href="#home"><img src="./imagenes/LogoMenu.png" style="max-width:90px;"></a>
 			<div class="topnav-right">
 				<a style="visibility: hidden;" href="#Inicio"></a>
 				<a href="#Inicio" onClick="location.href='index.html'">Inicio</a>
@@ -37,7 +36,11 @@
 						<img src="./imagenes/Inicio/IGmenu.svg">
 					</div>
 				</a>
-				<a href="#TW"><img src="./imagenes/Inicio/TWmenu.svg"></a>
+				<a href="#TW">
+					<div id="divrsfooter">
+						<img src="./imagenes/Footer/YTlogo.svg">
+					</div>
+				</a>
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -56,7 +59,7 @@
 			}
 		</script>
 		<!-- primer header -->
-		<div class="container" style="background-image: url('./imagenes/FondoDegradado.svg');background-repeat: no-repeat;width:100%;">
+		<div class="container" style="background-image: url('./imagenes/FondoDegradado.svg');background-repeat: no-repeat;background-size: cover;width:100%;">
 			
 			<div class="col-sm-5">
 				<div>
@@ -64,7 +67,7 @@
 				</div>
 			</div>
 			<div class="col-sm-7">
-				<div style="display: table; height: 400px; overflow: hidden;">
+				<div class="lottietextov" style="display: table; overflow: hidden;">
 					<div style="display: table-cell; vertical-align: middle;">
 						<div id="headMain">
 							Bienvenid@ soy <span style="color: #9682AF;font-weight:bolder;">Sofie</span>, </br> tu red de bienestar & apoyo
@@ -74,10 +77,10 @@
 							Estoy aquí para ayudarte a prevenir, identificarte y actuar frente a situaciones de violencia de genero
 						</div>
 						<br>
-						
 					</div>
 				</div>
 			</div>
+		
 		</div>
 		
 		<!-- iframe -->
@@ -94,7 +97,8 @@
 				<div class="col-md-3">
 					<div class="">
 						<div class="col-md">
-						    <div class="logo-part">
+						    <div align="center" style="padding-right:100px;">
+							<br>
 								<img src="./imagenes/Footer/LogoFooter.svg" class="w-50 logo-footer" style="max-width:120px;"/>
 							</div>
 						</div>
@@ -106,6 +110,14 @@
 							<tr>
 								<th>
 									<h6 id="títulosfooter">Menú</h6>
+									
+								</th>
+								<th>
+									<h6 id="títulosfooter">Síguenos en</h6>
+								</th>
+							</tr>
+							<tr>
+								<td>
 									<div class="">
 										<div class="col-md">
 											 <ul style="list-style-type:none;padding-left:-20px;padding-inline-start: 0px;">
@@ -115,17 +127,15 @@
 											 </ul>
 										</div>
 									</div>
-								</th>
-								<th>
-									<h6 id="títulosfooter" style="font-size:12px;">Síguenos en</h6>
-									<br>
+								</td>
+								<td>
 									<div class="">
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<table>
 												<tr>
 													<th>
 														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/FBmenu.svg"></a>
+															<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg" onClick="location.href='https://www.instagram.com/app_sofie/'"></a>
 														</div>
 													</th>
 													<th>
@@ -136,12 +146,28 @@
 												</tr>
 											</table>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<table>
 												<tr>
 													<th>
 														<div id="divrsfooter">
-															<a href="#IG"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+															<a href="https://www.instagram.com/app_sofie/" target="_blank"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+														</div>
+													</th>
+													<th>
+														<a id="textosfooter" href="#inicio">
+															Sofiechatbot
+														</a>
+													</th>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table>
+												<tr>
+													<th>
+														<div id="divrsfooter">
+															<a href="#IG"><img src="./imagenes/Footer/YTlogo.svg"></a>
 														</div>
 													</th>
 													<th>
@@ -153,7 +179,7 @@
 											</table>
 										</div>
 									</div>
-								</th>
+								</td>
 							</tr>
 						</table>
 					</div>

@@ -99,7 +99,69 @@ body {
 	text-align:center;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 0px 4px #888888;
+	box-shadow: 0px 2px 5px #888888;
+}
+
+.divdirectorio { 
+    max-width:1200px;
+    max-height:800px;
+	text-align:center;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px #888888;
+	border: 1px solid #E5E8E5;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.divdirectoriocontct { 
+    width:350px;
+    height:280px;
+	text-align:center;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #E5E8E5;
+	padding-top:10px;
+	padding-bottom:5px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.tituloddc{
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0.7142857313156128px;
+	text-align: left;
+	color: #9682AF;
+}
+
+.textoddc{
+	font-size: 0.9em;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.comollegarddc{
+	font-size: 0.6em;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-decoration: underline currentcolor; 
+	color: #9682AF;
+}
+
+#colareas{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	padding-bottom:10px;
 }
 
 .divareas {
@@ -108,9 +170,10 @@ body {
 	padding-left: 10px;
 	padding-right:10px;
 	width:610px;
-    min-height:260px;
+    max-height:300px;
 	text-align:center;
-	background-color: #ECE5F6;
+	background-color: #BDA8DD;
+	
 }
 
 .divareasiconos {
@@ -129,7 +192,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.2em;
   font-weight: bolder;
   border-radius: 20px;
   width:290px;
@@ -137,11 +200,11 @@ body {
 }
 
 .button1 {
-  background-color: #DACFE8;
+  background-color: #EB7B79;
 }
 
 .button2:hover {
-  background-color: #ECE5F6;
+  background-color: #D0C2E1;
 }
 
 .topnav {
@@ -242,9 +305,21 @@ hr {
 }
 
 .slider-container {
-    background-color: #fff;
+    background-color: transparent;
+}
+
+.divtestimonios{
+	background-color: white;
     box-shadow: -2.08px 10px 38px #00000026;
     border-radius: 10px;
+	max-width: 500px;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+.tablafooterimg{
+	padding-top:3px;
+	padding-bottom:3px;
 }
 
 .slick-prev, .slick-next {
@@ -369,6 +444,22 @@ hr {
     background: url("./imagenes/Inicio/comillas.png") no-repeat;
 }
 
+.tablalotties{
+	width:100%;
+	width:320px;
+}
+
+.lottiepuesto{
+	width: 100px; 
+	height: 100px;
+}
+
+.imglottie{
+	width:100px;
+	padding-top:40px;
+	padding-bottom:5px;
+}
+
 @media (max-width: 519px) {
     .container {
         width: 340px;
@@ -385,6 +476,13 @@ hr {
     .slider-title {
         font-size: 26px;
     }
+	.divdirectoriocontct{
+		width:200px;
+		height:350px;
+	}
+	.divareas{
+		height:300px;
+	}
 }
 
 @media (min-width: 520px) and (max-width: 759px) {
@@ -395,12 +493,60 @@ hr {
     .slick-prev {
         left: -25px;
     }
+	.divdirectoriocontct{
+		width:200px;
+		height:350px;
+	}
+	.divdirectoriocontct{
+		width:700px;
+	}
+	.lottietextov{
+		padding-top:70px;
+	}
+	.divareas{
+		width:300px;
+		height:300px;
+	}
 }
 
 @media (min-width: 760px) and (max-width: 1320px) {
     .container {
         width: 680px;
     }
+	.button {
+		width:200px;
+		height:35px;
+	}
+	
+	.divdirectoriocontct{
+		width:220px;
+		height:350px;
+	}
+	
+	.divareas{
+		width:300px;
+		height:300px;
+	}
+	
+	.imglottie{
+		width:70px;
+		padding-top:30px;
+		padding-bottom:0px;
+	}
+	
+	.divlotties{
+		width:100px;
+		height:100px;
+	}
+	
+	.tablalotties{
+		width:210px;
+	}
+	
+	.lottiepuesto{
+		width:60px;
+		height:60px;
+	}
 
     .slider-container {
         margin: 45px 20px;
@@ -413,6 +559,9 @@ hr {
     .slick-prev {
         left: -40px;
     }
+	.lottietextov{
+		padding-top:70px;
+	}
 }
 
 @media (max-width: 1320px) {
@@ -421,6 +570,12 @@ hr {
         width: 40px;
         height: 75px;
     }
+	.lottietextov{
+		padding-top:70px;
+	}
+	.divareas{
+		height:260px;
+	}
 }
 
 @media (min-width: 1321px) and (max-width: 1475px) {
@@ -431,6 +586,12 @@ hr {
     .slider-container {
         margin: 45px 35px;
     }
+	.lottietextov{
+		padding-top:70px;
+	}
+	.divareas{
+		height:260px;
+	}
 }
 
 #títulosfooter{
