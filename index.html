@@ -9,7 +9,6 @@
 
 		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="estilos.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,7 +20,7 @@
 
 	</head>
 
-	<body>
+	<body style="overflow-x:hidden;">
 		
 		<!-- responsive top menu -->
 		<div class="topnav" id="myTopnav" align="right" >
@@ -37,7 +36,11 @@
 						<img src="./imagenes/Inicio/IGmenu.svg">
 					</div>
 				</a>
-				<a href="#TW"><img src="./imagenes/Inicio/TWmenu.svg"></a>
+				<a href="#TW">
+					<div id="divrsfooter">
+						<img src="./imagenes/Footer/YTlogo.svg">
+					</div>
+				</a>
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -56,7 +59,7 @@
 			}
 		</script>
 		<!-- primer header -->
-		<div class="container" style="background-image: url('./imagenes/FondoDegradado.svg');background-repeat: no-repeat;width:100%;">
+		<div class="container" style="background-image: url('./imagenes/FondoDegradado.svg');background-repeat: no-repeat;background-size: cover;width:100%;min-height:100%;">
 			
 			<div class="col-sm-5">
 				<div>
@@ -64,7 +67,7 @@
 				</div>
 			</div>
 			<div class="col-sm-7">
-				<div style="display: table; height: 400px; overflow: hidden;">
+				<div class="lottietextov" style="display: table; overflow: hidden;">
 					<div style="display: table-cell; vertical-align: middle;">
 						<div id="headMain">
 							Bienvenid@ soy <span style="color: #9682AF;font-weight:bolder;">Sofie</span>, </br> tu red de bienestar & apoyo
@@ -95,21 +98,22 @@
 		<br><br><br><br><br>
 		
 		<!-- Encuéntrame y conversa conmigo -->
-		<div class="container" style="background-image: url('./imagenes/FondoDegradado2.png');background-repeat: no-repeat;width:100%;" >
+		<div class="container" style="background-image: url('');background-position:center;background-color:#DACFE8;width:100%;min-height:325px;" >
+			<img src="./imagenes/PatronFondoWeb.svg" style="background-repeat: repeat-y;position:absolute;width:100%;opacity:40%;">
 			<br><br>
 			<div id="headEYCC">
 				Encuéntrame y conversa conmigo en:
 			</div>
 			<br><br>
-			<div class="container" style="max-width:1200px; text-align:center;">
-				<div class="col-sm-4">
+			<div class="container" style="max-width:1000px; text-align:center;">
+				<div class="col-sm-4" style="padding-bottom:10px;">
 					<div class="">
-					<table align="center" style="width:100%;"><!--TABLA 2 lotties -->
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
 						<tr>
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+										<lottie-player class="lottiepuesto" src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
 										<p>Whatsapp</p>
 									</div>
 								</div>
@@ -117,7 +121,7 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_7wg8osae.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop	 autoplay></lottie-player>
+										<lottie-player class="lottiepuesto" src="https://assets8.lottiefiles.com/private_files/lf30_7wg8osae.json" background="transparent" speed="1" loop	 autoplay></lottie-player>
 										<p>Messenger</p>
 									</div>
 								</div>
@@ -126,14 +130,14 @@
 					</table>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4" style="padding-bottom:10px;">
 					<div class="">
-					<table style="width:100%;"><!--TABLA 2 lotties -->
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
 						<tr>
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_eer16sgw.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop  autoplay></lottie-player>
+										<lottie-player class="lottiepuesto" src="https://assets5.lottiefiles.com/private_files/lf30_eer16sgw.json" background="transparent" speed="1" loop  autoplay></lottie-player>
 										<p>Telegram</p>
 									</div>
 								</div>
@@ -141,7 +145,7 @@
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_5dtfo4ne.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+										<lottie-player class="lottiepuesto" src="https://assets5.lottiefiles.com/private_files/lf30_5dtfo4ne.json" background="transparent" speed="1" loop autoplay></lottie-player>
 										<p>SMS</p>
 									</div>
 								</div>
@@ -150,23 +154,23 @@
 					</table>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4" style="padding-bottom:10px;">
 					<div class="">
-					<table style="width:100%;"><!--TABLA 2 lotties -->
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
 						<tr>
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<img src="./imagenes/Inicio/Rectangle.png" style="max-width:100px;padding-top:40px;">
-										<p style="padding-top:20px;">iOS</p>
+										<img src="./imagenes/Inicio/Rectangle2.svg" class="imglottie">
+										<p>iOS</p>
 									</div>
 								</div>
 							</th>
 							<th>
 								<div class="divlotties">
 									<div align="center">
-										<img src="./imagenes/Inicio/Rectangle.png" style="max-width:100px;padding-top:40px;">
-										<p style="padding-top:20px;">Android</p>
+										<img src="./imagenes/Inicio/Rectangle.png" class="imglottie">
+										<p>Android</p>
 									</div>
 								</div>
 							</th>
@@ -188,7 +192,7 @@
 		<br><br>
 		<div class="">
 			<div class="container">
-				<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
+				<div class="col-sm-6" id="colareas">
 					<div class="divareas">
 						<br>
 						<div id="areasCentered">
@@ -198,14 +202,13 @@
 						<table style="width:250px;text-align:center;" align="center"><!--TABLA 2 lotties -->
 							<tr>
 								<th>
-									<div>
+									<div align="center">
 										<img src="./imagenes/Inicio/areas/LibroWeb.png" style="max-width:100px;">
 									</div>
 								</th>
 								<th>
-									<div>
+									<div align="center">
 										<img src="./imagenes/Inicio/areas/Herramientas.png" style="max-width:100px;">
-									</div>
 									</div>
 								</th>
 							</tr>
@@ -216,7 +219,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
+				<div class="col-sm-6" id="colareas">
 					<div class="divareas">
 						<br>
 						<div id="areasCentered">
@@ -226,28 +229,26 @@
 						<table style="width:250px;text-align:center;" align="center"><!--TABLA 2 lotties -->
 							<tr>
 								<th>
-									<div>
+									<div align="center">
 										<img src="./imagenes/Inicio/areas/Lupa.png" style="max-width:100px;">
 									</div>
 								</th>
 								<th>
-									<div>
+									<div align="center">
 										<img src="./imagenes/Inicio/areas/Ruta.png" style="max-width:100px;">
 									</div>
 								</th>
 							</tr>
 						</table>
-						
 						<div id="areasCenteredsml">
 							Identificamos las rutas más relevantes de atención de acuerdo a tu ciudad
 						</div>
 					</div>
 				</div>	
 			</div>
-			<br>
 			<div class="">
 				<div class="container">
-					<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
+					<div class="col-sm-6" id="colareas">
 						<div class="divareas">
 							<br>
 							<div id="areasCentered">
@@ -257,12 +258,12 @@
 							<table style="width:250px;text-align:center;" align="center"><!--TABLA 2 lotties -->
 								<tr>
 									<th>
-										<div>
+										<div align="center">
 											<img src="./imagenes/Inicio/areas/Cuidado.png" style="max-width:100px;">
 										</div>
 									</th>
 									<th>
-										<div>
+										<div align="center">
 											<img src="./imagenes/Inicio/areas/Telefono.png" style="max-width:100px;">
 										</div>
 									</th>
@@ -273,8 +274,8 @@
 								Recomendamos redes de apoyo virtuales
 							</div>
 						</div>
-					</div>	
-					<div class="col-sm-6" style="display: flex;display: -webkit-flex;flex-wrap: wrap;">
+					</div>
+					<div class="col-sm-6" id="colareas">
 						<div class="divareas">
 							<br>
 							<div id="areasCentered">
@@ -284,12 +285,12 @@
 							<table style="width:250px;text-align:center;" align="center"><!--TABLA 2 lotties -->
 								<tr>
 									<th>
-										<div>
+										<div align="center">
 											<img src="./imagenes/Inicio/areas/Directorio.png" style="max-width:100px;">
 										</div>
 									</th>
 									<th>
-										<div>
+										<div align="center">
 											<img src="./imagenes/Inicio/areas/Links.png" style="max-width:100px;">
 										</div>
 									</th>
@@ -302,6 +303,7 @@
 						</div>
 					</div>	
 				</div>
+			</div>
 			</div>
 		</div>
 		<br /><br><br>
@@ -317,7 +319,7 @@
 			  <div class="content">
 				<div class="slider-container">
 				  <div class="slider-content">
-					<div style="max-width:460px;">
+					<div class="divtestimonios">
 						<br>
 						<div align="center">
 							<img src="./imagenes/Inicio/comillas.png"/>
@@ -336,7 +338,26 @@
 				</div>
 				<div class="slider-container">
 				  <div class="slider-content">
-					<div style="max-width:460px;">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content" >
+					<div class="divtestimonios">
 						<br>
 						<div align="center">
 							<img src="./imagenes/Inicio/comillas.png"/>
@@ -355,7 +376,7 @@
 				</div>
 				<div class="slider-container">
 				  <div class="slider-content">
-					<div style="max-width:460px;">
+					<div class="divtestimonios">
 						<br>
 						<div align="center">
 							<img src="./imagenes/Inicio/comillas.png"/>
@@ -374,7 +395,7 @@
 				</div>
 				<div class="slider-container">
 				  <div class="slider-content">
-					<div style="max-width:460px;">
+					<div class="divtestimonios">
 						<br>
 						<div align="center">
 							<img src="./imagenes/Inicio/comillas.png"/>
@@ -393,26 +414,7 @@
 				</div>
 				<div class="slider-container">
 				  <div class="slider-content">
-					<div style="max-width:460px;">
-						<br>
-						<div align="center">
-							<img src="./imagenes/Inicio/comillas.png"/>
-						</div>
-						<br>
-						<div id="areasCenteredsml">
-							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
-							En cuestión de segundos obtuve la ayuda esperada.
-						</div>
-						<br>
-						<div id="testimonioNom">
-							-Mónica Vargaas
-						</div>
-					</div>
-				  </div>
-				</div>
-				<div class="slider-container">
-				  <div class="slider-content">
-					<div style="max-width:460px;">
+					<div class="divtestimonios">
 						<br>
 						<div align="center">
 							<img src="./imagenes/Inicio/comillas.png"/>
@@ -476,7 +478,7 @@
 				<div class="col-md-3">
 					<div class="">
 						<div class="col-md">
-						    <div align="center" style="padding-right:100px;">
+						    <div align="center" style="">
 							<br>
 								<img src="./imagenes/Footer/LogoFooter.svg" class="w-50 logo-footer" style="max-width:120px;"/>
 							</div>
@@ -510,6 +512,7 @@
 								<td>
 									<div class="">
 										<div class="col-md-4">
+											<div class="tablafooterimg">
 											<table>
 												<tr>
 													<th>
@@ -524,8 +527,10 @@
 													</th>
 												</tr>
 											</table>
+											</div>
 										</div>
 										<div class="col-md-4">
+											<div class="tablafooterimg">
 											<table>
 												<tr>
 													<th>
@@ -540,8 +545,10 @@
 													</th>
 												</tr>
 											</table>
+											</div>
 										</div>
 										<div class="col-md-4">
+											<div class="tablafooterimg">
 											<table>
 												<tr>
 													<th>
@@ -556,6 +563,7 @@
 													</th>
 												</tr>
 											</table>
+											</div>
 										</div>
 									</div>
 								</td>
