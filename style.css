@@ -67,12 +67,19 @@ body {
 	font-size: 20px;
 }
 
+#tablacentered{
+	width:250px;
+	text-align:center;
+}
+
 #areasCentered {
 	font-weight: 900;
 	line-height: 24px;
 	letter-spacing: 1.2857142686843872px;
 	text-align: center;
 	font-size: 20px;
+	padding-top: 25px;
+	padding-bottom:10px;
 }
 
 #areasCenteredsml {
@@ -82,6 +89,7 @@ body {
 	letter-spacing: 1.2857142686843872px;
 	text-align: center;
 	font-size: 1.5rem;
+	padding-top:20px;
 }
 
 #testimonioNom {
@@ -157,13 +165,6 @@ body {
 	color: #9682AF;
 }
 
-#colareas{
-	display: flex;
-	display: -webkit-flex;
-	flex-wrap: wrap;
-	padding-bottom:10px;
-}
-
 .video-responsive {
 	height: 0;
 	overflow: hidden;
@@ -179,13 +180,21 @@ body {
 	width: 100%;
 	}
 
+#colareas{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	padding-bottom:10px;
+}
+
 .divareas {
 	padding-top:10px;
 	padding-bottom:10px;
 	padding-left: 10px;
 	padding-right:10px;
 	width:610px;
-    max-height:300px;
+    max-height:350px;
+	height:290px;
 	text-align:center;
 	background-color: #BDA8DD;
 	
@@ -496,7 +505,7 @@ hr {
 		height:350px;
 	}
 	.divareas{
-		height:300px;
+		height:320px;
 	}
 }
 
@@ -520,7 +529,7 @@ hr {
 	}
 	.divareas{
 		width:300px;
-		height:300px;
+		height:320px;
 	}
 }
 
@@ -540,7 +549,7 @@ hr {
 	
 	.divareas{
 		width:300px;
-		height:300px;
+		height: 320px;
 	}
 	
 	.imglottie{
@@ -589,7 +598,7 @@ hr {
 		padding-top:70px;
 	}
 	.divareas{
-		height:260px;
+		height:320px;
 	}
 }
 
@@ -605,7 +614,7 @@ hr {
 		padding-top:70px;
 	}
 	.divareas{
-		height:260px;
+		height:300px;
 	}
 }
 
