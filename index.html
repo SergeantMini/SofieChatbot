@@ -1,0 +1,606 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Sofie Chatbot</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body style="overflow-x:hidden;">
+		
+		<!-- responsive top menu -->
+		<div class="topnav" id="myTopnav" align="right" >
+			<a href="#home"><img src="./imagenes/LogoMenu.png" style="max-width:90px;" ></a>
+			<div class="topnav-right">
+				<a style="visibility: hidden;" href="#Inicio"></a>
+				<a href="#Inicio" onClick="location.href='index.html'">Inicio</a>
+				<a href="#Chat" onClick="location.href='chat.html'">Chat</a>
+				<a href="#Directorio" onClick="location.href='directorio.html'">Directorio</a>
+				<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg"></a>
+				<a href="https://www.instagram.com/app_sofie/" target="_blank">
+					<div id="divrsfooter">
+						<img src="./imagenes/Inicio/IGmenu.svg">
+					</div>
+				</a>
+				<a href="https://www.youtube.com/channel/UCop25Le8Txsh02KC3GhJtJA" target="_blank">
+					<div id="divrsfooter">
+						<img src="./imagenes/Footer/YTlogo.svg">
+					</div>
+				</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		<script>
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- primer header -->
+		<div class="container" style="background-image: url('./imagenes/FondoDegradado.svg');background-repeat: no-repeat;background-size: cover;width:100%;min-height:100%;">
+			
+			<div class="col-sm-5">
+				<div>
+					<lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_9vjwxxac.json" background="transparent" speed="1" style="width: 354px; height: 354px;" loop autoplay></lottie-player> 
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<div class="lottietextov" style="display: table; overflow: hidden;">
+					<div style="display: table-cell; vertical-align: middle;">
+						<div id="headMain">
+							Bienvenid@ soy <span style="color: #9682AF;font-weight:bolder;">Sofie</span>, </br> tu red de bienestar & apoyo
+						</div>
+						<br>
+						<div id="bodyHeadMain">
+							Estoy aquí para ayudarte a prevenir, identificarte y actuar frente a situaciones de violencia de genero
+						</div>
+						<br>
+						<div class="">
+							<div class="col-sm-6">
+								<div style="padding-top:2%;padding-bottom:2%;">
+									<button class="button button1" onClick="location.href='chat.html'">Estoy en peligro</button>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div style="padding-top:2%;padding-bottom:2%;">
+									<button class="button button2" onClick="location.href='chat.html'">Conversa conmigo</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<br><br><br><br><br>
+		
+		<!-- Encuéntrame y conversa conmigo -->
+		<div class="container" style="background-image: url('');background-position:center;background-color:#DACFE8;width:100%;min-height:325px;" >
+			<img src="./imagenes/PatronFondoWeb.svg" style="background-repeat: repeat-y;position:absolute;width:100%;opacity:40%;">
+			<br><br>
+			<div id="headEYCC">
+				Encuéntrame y conversa conmigo en:
+			</div>
+			<br><br>
+			<div class="container" style="max-width:1000px; text-align:center;">
+				<div class="col-sm-4" style="padding-bottom:10px;">
+					<div class="">
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
+						<tr>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<lottie-player class="lottiepuesto" src="https://assets2.lottiefiles.com/private_files/lf30_kqiqvxp2.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+										<p>Whatsapp</p>
+									</div>
+								</div>
+							</th>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<lottie-player class="lottiepuesto" src="https://assets8.lottiefiles.com/private_files/lf30_7wg8osae.json" background="transparent" speed="1" loop	 autoplay></lottie-player>
+										<p>Messenger</p>
+									</div>
+								</div>
+							</th>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<div class="col-sm-4" style="padding-bottom:10px;">
+					<div class="">
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
+						<tr>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<lottie-player class="lottiepuesto" src="https://assets5.lottiefiles.com/private_files/lf30_eer16sgw.json" background="transparent" speed="1" loop  autoplay></lottie-player>
+										<p>Telegram</p>
+									</div>
+								</div>
+							</th>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<lottie-player class="lottiepuesto" src="https://assets5.lottiefiles.com/private_files/lf30_5dtfo4ne.json" background="transparent" speed="1" loop autoplay></lottie-player>
+										<p>SMS</p>
+									</div>
+								</div>
+							</th>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<div class="col-sm-4" style="padding-bottom:10px;">
+					<div class="">
+					<table class="tablalotties" align="center"><!--TABLA 2 lotties -->
+						<tr>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<img src="./imagenes/Inicio/Rectangle2.svg" class="imglottie">
+										<p style="padding-top:13px;">iOS</p>
+									</div>
+								</div>
+							</th>
+							<th>
+								<div class="divlotties">
+									<div align="center">
+										<a href="https://install.appcenter.ms/users/oscar121094/apps/rene-bot/distribution_groups/alpha" target="_blank">
+											<img src="./imagenes/Inicio/Rectangle.png" class="imglottie">
+											<p style="color:black;padding-top:15px;">Android</p>
+										</a>
+									</div>
+								</div>
+							</th>
+						</tr>
+					</table>
+					</div>
+				</div>
+			</div>
+			</br></br><br>
+		</div>
+		<br><br><br><br>
+		<div id="headTLQP">
+			Todo lo que puedo hacer por ti
+		</div>
+		<br>
+		<div id="bodyCentered">
+			Al comunicarte conmigo te apoyaré y te guiaré en las siguientes áreas
+		</div>
+		<br><br>
+		<div class="">
+			<div class="container">
+				<div class="col-sm-6" id="colareas">
+					<div class="divareas">
+						<div id="areasCentered">
+							Herramientas para identificar violencia
+						</div>
+						<br>
+						<table id="tablacentered" align="center"><!--TABLA 2 lotties -->
+							<tr>
+								<th>
+									<div align="center">
+										<img src="./imagenes/Inicio/areas/LibroWeb.png" style="max-width:100px;">
+									</div>
+								</th>
+								<th>
+									<div align="center">
+										<img src="./imagenes/Inicio/areas/Herramientas.png" style="max-width:100px;">
+									</div>
+								</th>
+							</tr>
+						</table>
+						<br>
+						<div id="areasCenteredsml">
+							Kit de herramientas para identificar la violencia
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" id="colareas">
+					<div class="divareas">
+						<div id="areasCentered">
+							Rutas de atención y acompañamiento en tu ciudad
+						</div>
+						<table id="tablacentered" align="center"><!--TABLA 2 lotties -->
+							<tr>
+								<th>
+									<div align="center">
+										<img src="./imagenes/Inicio/areas/Lupa.png" style="max-width:100px;">
+									</div>
+								</th>
+								<th>
+									<div align="center">
+										<img src="./imagenes/Inicio/areas/Ruta.png" style="max-width:100px;">
+									</div>
+								</th>
+							</tr>
+						</table>
+						<div id="areasCenteredsml">
+							Identificamos las rutas más relevantes de atención de acuerdo a tu ciudad
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="">
+				<div class="container">
+					<div class="col-sm-6" id="colareas">
+						<div class="divareas">
+							<div id="areasCentered">
+								Rutas de apoyo virtuales
+							</div>
+							<br>
+							<table id="tablacentered" align="center"><!--TABLA 2 lotties -->
+								<tr>
+									<th>
+										<div align="center">
+											<img src="./imagenes/Inicio/areas/Cuidado.png" style="max-width:100px;">
+										</div>
+									</th>
+									<th>
+										<div align="center">
+											<img src="./imagenes/Inicio/areas/Telefono.png" style="max-width:100px;">
+										</div>
+									</th>
+								</tr>
+							</table>
+							<br>
+							<div id="areasCenteredsml">
+								Recomendamos redes de apoyo virtuales
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6" id="colareas">
+						<div class="divareas">
+							<div id="areasCentered">
+								Instituciones cerca de mi
+							</div>
+							<br>
+							<table id="tablacentered" align="center"><!--TABLA 2 lotties -->
+								<tr>
+									<th>
+										<div align="center">
+											<img src="./imagenes/Inicio/areas/Directorio.png" style="max-width:100px;">
+										</div>
+									</th>
+									<th>
+										<div align="center">
+											<img src="./imagenes/Inicio/areas/Links.png" style="max-width:100px;">
+										</div>
+									</th>
+								</tr>
+							</table>
+							<br>
+							<div id="areasCenteredsml">
+								Proporcionamos un listado de instituciones cercanas a tu ubicación
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			</div>
+		</div>
+		<br /><br><br>
+		
+		<div style="background-color: #E195BD;max-width:100%;">
+			<br><br>
+			<div id="headEYCC">
+				Testimonios
+			</div>
+			<br>
+			<!-- CARROUSEL -->	
+			<div class="container">
+			  <div class="content">
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content" >
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="slider-container">
+				  <div class="slider-content">
+					<div class="divtestimonios">
+						<br>
+						<div align="center">
+							<img src="./imagenes/Inicio/comillas.png"/>
+						</div>
+						<br>
+						<div id="areasCenteredsml">
+							La atención con el asistente virtual fue mucho más rápida que si hubiera llamado a la línea 155.
+							En cuestión de segundos obtuve la ayuda esperada.
+						</div>
+						<br>
+						<div id="testimonioNom">
+							-Mónica Vargaas
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<br><br>
+		</div>
+		
+		<br><br><br>
+		
+		<div id="headVideos">
+			Videos
+		</div>
+		<br>
+		<div>
+			<div class="container" style="max-width:600px;max-height:350px;">
+				<div align="center">
+					<iframe 
+						style="width:100%;height:300px;"
+						src="https://www.youtube.com/embed/0R4Lg83VX00" 
+						title="YouTube video player" 
+						frameborder="0" 
+						allow="accelerometer; 
+								autoplay; 
+								clipboard-write; 
+								encrypted-media; 
+								gyroscope; 
+								picture-in-picture" 
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+	<footer class="container-fluid white py-5" style="background: #ECE5F6;">
+		<br>
+		<div class="container">
+			<div class="">
+				<div class="col-md-3">
+					<div class="">
+						<div class="col-md">
+						    <div align="center" style="">
+							<br>
+								<img src="./imagenes/Footer/LogoFooter.svg" class="w-50 logo-footer" style="max-width:120px;"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="">
+						<table style="width:100%;">
+							<tr>
+								<th>
+									<h6 id="títulosfooter">Menú</h6>
+									
+								</th>
+								<th>
+									<h6 id="títulosfooter">Síguenos en</h6>
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<div class="">
+										<div class="col-md">
+											 <ul style="list-style-type:none;padding-left:-20px;padding-inline-start: 0px;">
+												<li> <a id="textosfooter" onClick="location.href='index.html'">Inicio</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='chat.html'">Chat</a> </li>
+												<li> <a id="textosfooter" onClick="location.href='directorio.html'">Directorio</a> </li>
+											 </ul>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="">
+										<div class="col-md-4">
+											<div class="tablafooterimg">
+											<table>
+												<tr>
+													<th>
+														<div id="divrsfooter">
+															<a href="#FB"><img src="./imagenes/Inicio/FBmenu.svg" onClick="location.href='https://www.instagram.com/app_sofie/'"></a>
+														</div>
+													</th>
+													<th>
+														<a id="textosfooter" href="#inicio">
+															Sofiechatbot
+														</a>
+													</th>
+												</tr>
+											</table>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="tablafooterimg">
+											<table>
+												<tr>
+													<th>
+														<div id="divrsfooter">
+															<a href="https://www.instagram.com/app_sofie/" target="_blank"><img src="./imagenes/Inicio/IGmenu.svg"></a>
+														</div>
+													</th>
+													<th>
+														<a id="textosfooter" href="#inicio">
+															Sofiechatbot
+														</a>
+													</th>
+												</tr>
+											</table>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="tablafooterimg">
+											<a href="https://www.youtube.com/channel/UCop25Le8Txsh02KC3GhJtJA" target="_blank">
+												<table>
+													<tr>
+														<th>
+															<div id="divrsfooter">
+																<img src="./imagenes/Footer/YTlogo.svg">
+															</div>
+														</th>
+														<th>
+															<a id="textosfooter" href="#inicio">
+																Sofiechatbot
+															</a>
+														</th>
+													</tr>
+												</table>
+											</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+	</footer>
+	<div style="background: #FFF;">
+			<div style="background-color: white;">
+				<div class="col-sm-3">
+					<div id="avisosfooter">
+						© 2021 SOFIE. Todos los derechos reservados
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div id="avisosfooter">
+						Terminos y condiciones
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div id="avisosfooter">
+						Avisos de privacidad
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div id="avisosfooter">
+						<a href="http://designdeux.com/" target="_blank" style="color:black;">Sitio diseñado por DEUX</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					
+				</div>
+			</div>
+		</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/jquery-equal-height.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
