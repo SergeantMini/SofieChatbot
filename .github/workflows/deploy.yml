@@ -1,0 +1,28 @@
+name: Deploying FTP
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.2
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+          server: 46.17.175.150
+          username:  ${{ secrets.USER_NAME }}
+          password: ${{ secrets.PASSWORD }}
+          server-dir: mobile/
+          exclude: .git*
+            - .git*/**
+            -  **/.git*/**
+            - '*.scss'
+            - '*.less'
+
