@@ -19,7 +19,6 @@ jobs:
           server: 46.17.175.150
           username:  ${{ secrets.USER_NAME }}
           password: ${{ secrets.PASSWORD }}
-          server-dir: mobile/
           exclude: .git*
             - .git*/**
             -  **/.git*/**
