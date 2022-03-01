@@ -651,3 +651,20 @@ hr {
 	font-size: 10px;
 	line-height: 17px;
 }
+
+#head1404{
+	font-family: Montserrat;
+	font-size: 7rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 122px;
+	letter-spacing: 1.7142857313156128px;
+}
+
+#head2404{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 61px;
+	letter-spacing: 1.7142857313156128px;
+}
